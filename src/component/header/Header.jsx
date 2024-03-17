@@ -41,10 +41,10 @@ const toggleNavbar = () => {
       <section className={`absolute text-white top-0 bg-headingColor w-full text-4xl flex-col justify-center origin-top animate-open-menu ${isOpen ? 'flex' : 'hidden'}`}>
           <button className={`px-6 text-white mt-4 text-4xl self-end ${isOpen ? 'flex' : 'hidden'}`} onClick={toggleNavbar}>&times;</button>
           <nav className='flex flex-col min-h-screen items-center py-8'>
-            <a href="#about" className='w-full text-center py-8 hover:opacity-90'>About</a>
-            <a href="#services" className='w-full text-center py-8 hover:opacity-90'>Services</a>
-            <a href="#portfolio" className='w-full text-center py-8 hover:opacity-90'>Portfolio</a>
-            <a href="#contact" className='w-full text-center py-8 hover:opacity-90'>Contact</a>
+            <a href="#about" className={`w-full text-center py-8 hover:opacity-90 ${isOpen ? 'block' : 'hidden'}`} onClick={toggleNavbar}>About</a>
+            <a href="#services" className={`w-full text-center py-8 hover:opacity-90 ${isOpen ? 'block' : 'hidden'}`} onClick={toggleNavbar}>Services</a>
+            <a href="#portfolio" className={`w-full text-center py-8 hover:opacity-90 ${isOpen ? 'block' : 'hidden'}`} onClick={toggleNavbar}>Portfolio</a>
+            <a href="#contact" className={`w-full text-center py-8 hover:opacity-90 ${isOpen ? 'block' : 'hidden'}`} onClick={toggleNavbar}>Contact</a>
           </nav>
       </section>
     </header>
