@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 const Hero = () => {
   return (
     <div className='pt-0' id='about'>
-        <div className="container max-w-5xl mx-auto pt-14">
+        <div className="container max-w-7xl mx-auto pt-14">
             <div className="p-4 md:flex items-center justify-between sm:flex-col md:flex-row">
                 {/* hero left content */}
                 <div className="w-full md:basis-1/2">
@@ -27,7 +27,7 @@ const Hero = () => {
                         expectations. Let's bring your ideas to life!
                     </p>
 
-                    <div className="flex items-center gap-5 mt-14">
+                    <div className="flex items-center gap-5 mt-14" data-aos='fade-up' data-aos-duration='1800' data-aos-delay='200'>
                         <span className="text-headingColor text-base font-medium">Follow me:</span>
                         <span className='text-headingColor font-medium text-base'><a target='blank' href="https://www.instagram.com/_amosdesigns?igsh=MWFwMTc0dzl1czRiMQ%3D%3D&utm_source=qr"><i class="ri-instagram-line"></i></a></span>
                         <span className='text-headingColor font-medium text-base'><a target='blank' href="https://twitter.com/Pelumi_Amos1"><i class="ri-twitter-x-line"></i></a></span>
@@ -39,9 +39,41 @@ const Hero = () => {
                 </div>
                 
 
-                {/* hero right content */}
+                
                 {/* hero image */}
+                <div className='basis-1/3 mt-10 sm-mt-0' data-aos='fade-right' data-aos-duration='1800'>
+                    <figure className='border-8 border-solid border-primaryColor rounded-full overflow-hidden'>
+                        <img className='rounded-full hover:scale-110 ease-in duration-300' src={HeroImg} alt="hero image" />
+                    </figure>
+                </div>
 
+                {/* hero right content */}
+                <div className="md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end">
+                    <div className="mb-10">
+                        <h2 className="text-headingColor font-bold text-3xl">
+                            <CountUp start={0} end={4} duration={2} suffix='+'/>
+                        </h2>
+                        <h4 className='text-headingColor font-semibold text-lg'>Years Of Experience</h4>
+                    </div>
+                    <div className="mb-10">
+                        <h2 className="text-headingColor font-bold text-3xl">
+                            <CountUp start={0} end={100} duration={2} suffix='%'/>
+                        </h2>
+                        <h4 className='text-headingColor font-semibold text-lg'>Success Rate</h4>
+                    </div>
+                    <div className="mb-10">
+                        <h2 className="text-headingColor font-bold text-3xl">
+                            <CountUp start={0} end={70} duration={2} suffix='+'/>
+                        </h2>
+                        <h4 className='text-headingColor font-semibold text-lg'>Happy Clients</h4>
+                    </div>
+                    <div className="mb-10">
+                        <h2 className="text-headingColor font-bold text-3xl">
+                            <CountUp start={0} end={120} duration={2} suffix='+'/>
+                        </h2>
+                        <h4 className='text-headingColor font-semibold text-lg'>Project Completed</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

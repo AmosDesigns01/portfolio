@@ -18,7 +18,7 @@ export default {
       },
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards' 
-      }
+      },
     },
   },
   plugins: [],
