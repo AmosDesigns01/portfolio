@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import Aos from 'aos';
-import './App.css'
-import Header from './component/header/Header'
+import './App.css';
+import Header from './component/header/Header';
+import Hero from './component/hero/Hero';
 
 function App() {
   useEffect(()=>{
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
     <Header/>
+    <Hero/>
     
     </div>
   )

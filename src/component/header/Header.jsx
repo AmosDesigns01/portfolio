@@ -15,27 +15,33 @@ const toggleNavbar = () => {
 
   return (
     <header className='md:bg-white bg-headingColor  sticky top-0 z-10 text-primaryColor'>
+      {/* Desktop Navbar */}
       <section className='max-w-5xl mx-auto p-4 flex justify-between items-center'>
-        {/* first logo */}
+        {/* Mobile logo */}
         <div className="logo md:hidden"> 
           <img className="w-20 h-11" src={Logo1} alt="company_logo"/>
         </div>
 
-        {/* second logo */}
+        {/* Desktop logo */}
         <div className="logo hidden md:block">
           <img className="w-20 h-11" src={Logo} alt="company_logo"/>
         </div>
 
+        {/* hamburger */}
         <button className='harmburger md:hidden text-3xl cursor-pointer text-white' onClick={toggleNavbar}>&#9776;</button>
 
-        {/* Desktop Navbar */}
         <nav className='hidden md:block text-lg space-x-8 text-headingColor font-semibold'>
           <a href="#about" className='hover:opacity-90'>About</a>
           <a href="#services" className='hover:opacity-90'>Services</a>
           <a href="#portfolio" className='hover:opacity-90'>Portfolio</a>
           <a href="#contact" className='hover:opacity-90'>Contact</a>
         </nav>
+
+        {/* lets talk button */}
+        <button className="md:max-h-10 md:text-headingColor hidden text-lg font-semibold md:flex md:items-center md:gap-2 md:border md:border-solid md:border-headingColor py-2 px-4 rounded-md md:hover:bg-headingColor md:hover:border-none md:hover:text-white ease-in duration-300"><i className="ri-send-plane-line"></i>Let's Talk</button>
+        
       </section>
+
 
       {/* Mobile Navbar */}
       <section className={`absolute text-white top-0 bg-headingColor w-full text-4xl flex-col justify-center origin-top animate-open-menu ${isOpen ? 'flex' : 'hidden'}`}>
