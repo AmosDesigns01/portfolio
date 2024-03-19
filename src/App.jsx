@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import Aos from 'aos';
 import './App.css';
-import Header from './component/header/Header';
-import Hero from './component/hero/Hero';
+import Header from './component/Header';
+import Hero from './component/Hero';
+import Services from './component/Services';
 
 function App() {
   useEffect(()=>{
@@ -13,7 +14,7 @@ function App() {
     <div>
     <Header/>
     <Hero/>
-    
+    <Services/>
     </div>
   )
 }
