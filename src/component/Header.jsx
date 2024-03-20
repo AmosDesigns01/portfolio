@@ -31,10 +31,10 @@ const toggleNavbar = () => {
         <button className='harmburger md:hidden text-3xl cursor-pointer text-white' onClick={toggleNavbar}>&#9776;</button>
 
         <nav className='hidden md:block text-base space-x-12 text-headingColor font-semibold'>
-          <a href="#about" className='hover:opacity-90'>About</a>
-          <a href="#services" className='hover:opacity-90'>Services</a>
-          <a href="#portfolio" className='hover:opacity-90'>Portfolio</a>
-          <a href="#contact" className='hover:opacity-90'>Contact</a>
+          <a href="#about" className='hover:opacity-90 md:hover:text-primaryColor'>About</a>
+          <a href="#services" className='hover:opacity-90 md:hover:text-primaryColor'>Services</a>
+          <a href="#portfolio" className='hover:opacity-90 md:hover:text-primaryColor'>Portfolio</a>
+          <a href="#contact" className='hover:opacity-90 md:hover:text-primaryColor'>Contact</a>
         </nav>
 
         {/* lets talk button */}
