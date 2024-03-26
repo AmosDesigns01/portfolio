@@ -100,6 +100,24 @@ const PortfolioData = [
         technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
         siteUrl: "#",
     },
+    {
+        id: '01',
+        imgUrl: portfolioImg1,
+        category: "Graphic Design",
+        title: "Testing 1",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut laudantium, iusto quo dignissimos facilis sequi.",
+        technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
+        siteUrl: "#",
+    },
+    {
+        id: '01',
+        imgUrl: portfolioImg1,
+        category: "Graphic Design",
+        title: "Testing 1",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut laudantium, iusto quo dignissimos facilis sequi.",
+        technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
+        siteUrl: "#",
+    },
 ]
 
 export default PortfolioData
